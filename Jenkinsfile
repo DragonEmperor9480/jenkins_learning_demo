@@ -2,7 +2,7 @@ pipeline{
     stages{
         stage('clone Repositry'){
             steps{
-                git branch 'main', url: 'https://github.com/DragonEmperor9480/jenkins_learning_demo.git'
+                git branch: 'main', url: 'https://github.com/DragonEmperor9480/jenkins_learning_demo.git'
             }
         }
         stage('Build'){
